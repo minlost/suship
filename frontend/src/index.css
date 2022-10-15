@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica;
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+ /* --- Navbar --- */
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+  font-size: 2rem;
+}
+
+.container-x{
+  font-size: 2rem;
+  position:absolute;
+  top:20px;
+  right:20px;
+  cursor: pointer;
+}
+
+.nav-admin {
+  color: red;
+}
+
+/* --- Body -- */
+
+.main-logo {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+}
+
+.main-logo h1 {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 6rem;
+  margin: 0;
+}
+
+
+.main-logo h2 {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  position: relative;
+}
+
+.logo-container img {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.logo-container img:hover {
+  animation: rotate 1s linear;
+
+}
+
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+/* --- Rezervation --- */
+
+.form-container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  flex-direction: column;
+  border: solid 1px rgb(223, 220, 220);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 25px;
+  height: 400px;
+  width: 300px;
+}
+
+.form-container-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  flex-direction: column;
+}
+
+.form-container-done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  flex-direction: column;
+}
+
+.form-container h1 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.container-middle{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 1px solid rgb(141, 141, 141);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.form-container button {
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #9fe78a;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.5s ease;
+}
+
+.button-res{
+
+}
+
+.form-container button:hover {
+  background-color: #43a540;
+}
+.form-container button:active {
+ 
+  transform: scale(1.2);
+}
+
+ /* --- List --- */
+
+ .record-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+ }
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    
+}
+
+.styled-table thead tr {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  
+  
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #555555;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
